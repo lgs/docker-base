@@ -1,0 +1,3 @@
+libuuid:100000:10000
+# empty default subuid/subgid file
+syslog:110000:10000

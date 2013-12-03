@@ -1,0 +1,2 @@
+application/x-tar; /bin/tar tvf '%s'; print=/bin/tar tvf - | print text/plain:-; copiousoutput
+application/x-gtar; /bin/tar tvzf '%s'; print=/bin/tar tvzf - | print text/plain:-; copiousoutput

@@ -1,0 +1,8 @@
+/etc/udev/udev.conf
+/etc/udev/rules.d/README
+/etc/init/udevmonitor.conf
+/etc/init/udev.conf
+/etc/init/udev-finish.conf
+/etc/init/udevtrigger.conf
+/etc/init/udev-fallback-graphics.conf
+/etc/init.d/udev
