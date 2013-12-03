@@ -1,6 +1,0 @@
-/etc/securetty
-/etc/subgid
-/etc/pam.d/su
-/etc/pam.d/login
-/etc/subuid
-/etc/login.defs

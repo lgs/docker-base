@@ -1,8 +1,0 @@
-4d46576627157f7e60debe4c2acecb5f  bin/dnsdomainname
-4d46576627157f7e60debe4c2acecb5f  bin/domainname
-e677866b84febd9ee713fca1be93d4b2  bin/hostname
-4d46576627157f7e60debe4c2acecb5f  bin/nisdomainname
-4d46576627157f7e60debe4c2acecb5f  bin/ypdomainname
-77ec27f4a9cd2b4d4b9bcc0a9c400799  usr/share/doc/hostname/changelog.gz
-460b6a1df2db2b5e80f05a44ec21c62f  usr/share/doc/hostname/copyright
-51cf49298a97ed67310b88c0a570ad30  usr/share/man/man1/hostname.1.gz
