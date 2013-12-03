@@ -1,33 +1,24 @@
 docker-base
 ===========
 
-Docker Lab Explo Experi Base
+Ubuntu 13.10 base image (Saucy Salamander), build on top of lgsd/saucy, where I used Debian’s tool [**Debootstrap**][1], for creating my own Docker Index base image: [**lgsd/saucy**][2].
 
+Dockerfile
+==========
 
-Short Description
-=================
+# Ubuntu 13.10 BASE image (Saucy Salamander)
+#
+# VERSION       1.0
 
-To build Ubuntu 13.10 BASE image (Saucy Salamander), I used Debian’s tool Debootstrap (see https://wiki.debian.org/Debootstrap). 
+# use the ubuntu base image provided by Luca G. Soave (see https://index.docker.io/u/lgsd/)
 
+FROM lgsd/saucy 
+MAINTAINER Luca G. Soave, luca.soave@gmail.com
 
-Base Image Creation Process
-===========================
+# make sure the package repository is up to date
+RUN echo "deb http://archive.ubuntu.com/ubuntu Saucy main universe" > /etc/apt/sources.list
+RUN apt-get update
 
-$ sudo debootstrap saucy saucy > /dev/null
-
-$ sudo tar -C saucy -c . | sudo docker import - lgsd/saucy
-
-$ sudo docker run lgsd/saucy cat /etc/lsb-release
-
-DISTRIB_ID=Ubuntu
-
-DISTRIB_RELEASE=13.10
-
-DISTRIB_CODENAME=saucy
-
-DISTRIB_DESCRIPTION="Ubuntu 13.10
-
-$ docker push lgsd/saucy
 
 LICENSE
 =======
@@ -54,3 +45,4 @@ IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 [1]: https://wiki.debian.org/Debootstrap
+[2]: https://index.docker.io/u/lgsd/saucy/
