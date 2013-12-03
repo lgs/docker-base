@@ -8,6 +8,6 @@ FROM lgsd/saucy
 MAINTAINER Luca G. Soave, luca.soave@gmail.com
 
 # make sure the package repository is up to date
-RUN echo "deb http://archive.ubuntu.com/ubuntu Saucy main universe" > /etc/apt/sources.list
+RUN echo "deb http://archive.ubuntu.com/ubuntu/ saucy universe" > /etc/apt/sources.list
 RUN apt-get update
 
