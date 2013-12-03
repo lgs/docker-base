@@ -1,23 +1,23 @@
 docker-base
 ===========
 
-Ubuntu 13.10 base image (Saucy Salamander), build on top of lgsd/saucy, where I used Debian’s tool [**Debootstrap**][1], for creating my own Docker Index base image: [**lgsd/saucy**][2].
+Ubuntu 13.10 base image (Saucy Salamander), build on top of [**lgsd/saucy**][2], where I used Debian’s tool [**Debootstrap**][1], for creating my own Docker Index base image: [**lgsd/saucy**][2].
 
 Dockerfile
 ==========
 
-# Ubuntu 13.10 BASE image (Saucy Salamander)
-#
-# VERSION       1.0
+    # Ubuntu 13.10 BASE image (Saucy Salamander)
+    #
+    # VERSION       1.0
 
-# use the ubuntu base image provided by Luca G. Soave (https://index.docker.io/u/lgsd/)
+    # use the ubuntu base image provided by Luca G. Soave (https://index.docker.io/u/lgsd/)
 
-FROM lgsd/saucy 
-MAINTAINER Luca G. Soave, luca.soave@gmail.com
+    FROM lgsd/saucy 
+    MAINTAINER Luca G. Soave, luca.soave@gmail.com
 
-# make sure the package repository is up to date
-RUN echo "deb http://archive.ubuntu.com/ubuntu/ saucy universe" > /etc/apt/sources.list
-RUN apt-get update
+    # make sure the package repository is up to date
+    RUN echo "deb http://archive.ubuntu.com/ubuntu/ saucy universe" > /etc/apt/sources.list
+    RUN apt-get update
 
 LICENSE
 =======
