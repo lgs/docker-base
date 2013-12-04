@@ -1,7 +1,7 @@
 docker-base
 ===========
 
-Ubuntu 13.10 base image (Saucy Salamander), build on top of [**lgsd/saucy**][2], where I used Debian’s tool [**Debootstrap**][1], for creating my own Docker Index base image: [**lgsd/saucy**][2].
+This is Ubuntu 13.10 image (Saucy Salamander), build on top of lgsd/saucy base ( [**FROM lgsd/saucy**][2] ). I used Debian’s tool [**Debootstrap**][1], for creating my own Docker Index Base Image lgsd/saucy.
 
 Dockerfile
 ==========
